@@ -11,4 +11,4 @@ This is a Web Application Portfolio that I created so that i will be able to my 
 Instagram: _ajiya
 Email: Ajiyafaruk@gmail.com
 
-### Anyone Can Contribut
+### Anyone Can Contribute
