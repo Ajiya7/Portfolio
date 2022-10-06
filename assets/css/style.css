@@ -25,12 +25,100 @@ html {
     list-style: none; 
 }
 
+body {
+    box-sizing: border-box;
+    position: relative;
+    line-height: 1.5px;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: sans-serif; 
+}
+
+.Home {
+    color: white;
+    background: url(../images/backgroung.jpg);
+    background-position: center;
+    height: 50vh;
+    min-height: 20rem;
+    max-height: 50rem;
+    position:relative; 
+}
+
+ @media only screen and (max-width: 37.5em) {
+     .Home {
+     height: unset;
+    min-height: unset; } 
+}
+
+.Home_heading {
+    font-size: 6rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: right; 
+}
+
+@media only screen and (max-width: 37.5em) {
+    .Home_heading {
+      font-size: 4.5rem; } 
+}
+
+.Home_socials{
+    position: absolute;
+    top: 50%;
+    border: 2px solid black;
+    border-left: 2px solid black;
+    transform: translateY(-50%); 
+}
+    
+@media only screen and (max-width: 56.25em) {
+    .Home_socials{
+    display: none; } 
+}
+
+.Home_social {
+    width: 5rem; 
+}
+
+.Home_social_icon_link {
+    width: 100%;
+    display: block;
+    padding: 1.2rem;
+    border-bottom: 2px solid black;
+}
+
+.Home_social_icon_link:hover {
+    background: whitesmoke; 
+}
+
+.Home_social_icon {
+    width: 100%; 
+}
+
+.Home_content {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    max-width: 90rem;
+    width: 92%; 
+    flex-wrap: wrap;
+}
+    
+@media only screen and (max-width: 37.5em) {
+    .Home_content {
+    padding: 19rem 0 13rem 0;
+    margin: auto;
+    position: static;
+    transform: translate(0, 0); } 
+}
+
 .header {
     position: fixed;
     width: 100%;
     z-index: 10;
     background-color: white;
-    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 10px 100px ; 
 }
 
 .header_content {
