@@ -1,6 +1,6 @@
 *,
 *::after,
-*::before{
+*::before {
     margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -35,11 +35,46 @@ body {
     font-family: sans-serif; 
 }
 
+.About_container,
+.Project_container,
+.Contact_container,
+.Footer_container{
+    max-width: 120rem;
+    margin: auto;
+    width: 92%; 
+}
+
+.heading_section_title {
+    display: block;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    letter-spacing: 3px;
+    text-align: left;
+    color: black;
+    margin-bottom: 3.5rem;
+    position:relative;
+}  
+
+.heading_section_intro {
+    display: block;
+    text-align: left;
+    color: grey;
+    font-size: 2rem;
+    font-weight: 500;
+    max-width: 80rem;
+    line-height: 1.6; 
+}
+
+.heading_section_title_C {
+    color: #fff; 
+}
+
 .header {
     position: fixed;
     width: 100%;
     z-index: 10;
-    background-color: white;
+    background-color: black;
     box-shadow: 0 10px 100px ; 
 }
 
@@ -59,7 +94,7 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
-    color: black; 
+    color: white; 
 }
 
 .header_avatar_and_name:hover {
@@ -110,7 +145,7 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 1.6rem;
-    color: black;
+    color: white;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
@@ -206,24 +241,147 @@ body {
     transform: translate(0, 0); } 
 }
 
+.About {
+    background: #fafafa; 
+}
+
+.about_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem; 
+}
+
+@media only screen and (max-width: 56.25em) {
+    .about_content {
+    grid-template-columns: 1fr;
+    grid-gap: 8rem; } 
+}
+
+.about_content_title {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 3rem; 
+}
+
+.about_content_details_paragraph {
+    font-size: 1.8rem;
+    color: grey;
+    max-width: 60rem;
+    line-height: 1.7;
+    margin-bottom: 1rem; 
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap; 
+}
+    
+.skills_skill {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+    background: lightgray;
+    border-radius: 5px;
+    font-weight: 600;
+    color: grey; 
+}
+
+.projects_info {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 5rem;
+    margin-bottom: 11rem; 
+}
+
+@media only screen and (max-width: 56.25em) {
+    .projects_info {
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+      margin-bottom: 8rem; } 
+}
+
+@media only screen and (max-width: 56.25em) {
+    .projects_info {
+      text-align: center; } 
+}
+
+.projects_info:last-child {
+  margin-bottom: 0; 
+}
+
+.projects_info_img_cont {
+  overflow: hidden; 
+}
+
+.projects_info_img {
+  width: 100%;
+  display: block;
+  object-fit: cover; 
+}
+
+.projects_info_img:hover {
+    transform: scale(1.5);
+}
+
+.projects_info_content {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+  
+@media only screen and (max-width: 56.25em) {
+  .projects_info_content {
+  align-items: center; } 
+}
+
+.projects_info_content_title {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 2rem; 
+}
+
+@media only screen and (max-width: 37.5em) {
+  .projects_info_content_title {
+  font-size: 2.4rem; } 
+}
+
+.projects_info_content_desc {
+  font-size: 1.8rem;
+  color: grey;
+  max-width: 60rem;
+  line-height: 1.7;
+  margin-bottom: 3rem; 
+}
+  
+@media only screen and (max-width: 37.5em) {
+  .projects_info_content_desc {
+  font-size: 1.7rem; } 
+}
+
+.Button {
+    background: white;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
 .Contact {
     background: url(../images/backgroung.jpg);
     background-size: cover;
     background-position: center; 
 }
 
-.heading_section_title {
-    display: block;
-    font-size: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    letter-spacing: 3px;
-    text-align: left;
-    color: white;
-    margin-bottom: 3.5rem;
-    position:fixed;
-    flex-wrap: wrap;
-}  
+.Contact_container {
+    max-width: 120rem;
+    margin: 5rem 0 0 0;
+    width: 92%; 
+}
 
 .contact_form_container {
    background: white;
@@ -279,6 +437,13 @@ body {
 .Footer {
     background-color: black;
     color: white; 
+}
+
+.footer_social_heading,
+.main_footer_title {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
 }
 
 .Footer_container_up {
