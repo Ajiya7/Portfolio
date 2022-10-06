@@ -29,7 +29,7 @@ html {
     position: fixed;
     width: 100%;
     z-index: 10;
-    background: #fff;
+    background-color: white;
     box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1); 
 }
 
@@ -97,6 +97,7 @@ html {
 
 .header_link {
     padding: 2.2rem 3rem;
+    text-decoration: none;
     display: inline-block;
     font-size: 1.6rem;
     color: black;
@@ -113,4 +114,72 @@ html {
     .header_link {
     padding: 3rem 1.8rem;
     font-size: 1.5rem; } 
+}
+
+.Footer {
+    background-color: black;
+    color: white; 
+}
+
+.Footer_container_up {
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 0; 
+}
+
+@media only screen and (max-width: 56.25em) {
+    .Footer_container_up {
+      padding: 6rem 0; } 
+}
+
+@media only screen and (max-width: 37.5em) {
+    .Footer_container_up {
+    display: block; } 
+}
+
+.Footer_social {
+    order: 2; 
+}
+    
+@media only screen and (max-width: 56.25em) {
+    .Footer_social {
+    margin-bottom: 5rem; } 
+}
+.main_footer{
+    width: 40%;
+    order: 1;
+    max-width: 50rem; 
+}
+    
+@media only screen and (max-width: 56.25em) {
+    .main_footer {
+    width: 100%; } 
+}
+
+.Footer_social_links {
+    margin-top: 2rem; 
+}
+
+.footer_icon_links {
+    margin-right: 1rem;
+    width: 2.5rem; 
+}
+
+.main_footer_lower {
+    padding: 4rem 0;
+    border-top: 1px solid grey;
+    color: white;
+    font-size: 1.2rem;
+    text-align: left;
+    text-align: center; 
+}
+
+.main_footer_lower {
+    font-weight: bold;
+    margin-left: 2px; 
+}
+
+@media only screen and (max-width: 56.25em) {
+    .main_footer_lower {
+    padding: 3.5rem 0; } 
 }
