@@ -54,6 +54,7 @@ body {
     color: black;
     margin-bottom: 3.5rem;
     position:relative;
+    flex-wrap: wrap;
 }  
 
 .heading_section_intro {
