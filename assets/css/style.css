@@ -37,7 +37,13 @@ body {
 
 .About_container,
 .Project_container,
-.Contact_container,
+.Contact_container{
+    max-width: 120rem;
+    margin: auto;
+    width: 92%; 
+    text-align: center;
+}
+
 .Footer_container{
     max-width: 120rem;
     margin: auto;
@@ -50,12 +56,16 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     letter-spacing: 3px;
-    text-align: left;
+    text-align: center;
     color: black;
     margin-bottom: 3.5rem;
     position:relative;
     flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 50px;
 }  
+
 
 .heading_section_intro {
     display: block;
@@ -63,12 +73,26 @@ body {
     color: grey;
     font-size: 2rem;
     font-weight: 500;
-    max-width: 80rem;
+    max-width: 120rem;
     line-height: 1.6; 
 }
 
 .heading_section_title_C {
     color: #fff; 
+    margin-top: 100px;
+}
+
+.heading_section_title_container{
+    margin-top: 100px;
+}
+
+.Projects{
+   padding-bottom: 10px;
+}
+
+#Contact{
+    margin-top: 200px;
+    z-index: 1;
 }
 
 .header {
@@ -117,7 +141,7 @@ body {
     margin-right: 1.2rem; } 
 }
 
-  .header_avatar_img {
+.header_avatar_img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -189,7 +213,7 @@ body {
 
 @media only screen and (max-width: 37.5em) {
     .Home_heading {
-      font-size: 4.5rem; } 
+      font-size: 3rem; } 
 }
 
 .Home_socials{
@@ -243,13 +267,15 @@ body {
 }
 
 .About {
-    background: #fafafa; 
+    background: white; 
 }
 
 .about_content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10rem; 
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -373,26 +399,27 @@ body {
 }
 
 .Contact {
-    background: url(../images/backgroung.jpg);
+    background-image: url(../images/backgroung.jpg);
     background-size: cover;
     background-position: center; 
 }
 
 .Contact_container {
     max-width: 120rem;
-    margin: 5rem 0 0 0;
+    margin: 5rem auto 0 auto;
     width: 92%; 
+    padding-bottom: 20px;
 }
 
 .contact_form_container {
-   background: white;
+   background-color: white;
     padding: 4rem;
     margin-top: 6rem;
     max-width: 80rem;
-    text-align: right;
+    text-align: left;
     width: 95%;
     border-radius: 5px;
-    margin: 5rem 0 0 2rem ; 
+    margin: auto;
 }
 
 .contact_form_field {
